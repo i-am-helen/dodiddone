@@ -1,3 +1,4 @@
+import 'package:dodiddone/screens/all_tasks.dart';
 import 'package:flutter/material.dart';
 import 'package:dodiddone/theme/theme.dart'; // Импортируем тему
 import 'package:dodiddone/screens/profile.dart'; // Импортируем ProfilePage
@@ -12,10 +13,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text('Задачи'),
+  static List<Widget> _widgetOptions = <Widget>[
+    TasksPage(),
     Text('Сегодня'),
-    ProfilePage(), // Заменяем Text на ProfilePage
+    ProfilePage(),
     Text('Выполнено'),
   ];
 
