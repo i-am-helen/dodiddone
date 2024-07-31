@@ -36,10 +36,29 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Row( // Добавляем Row для логотипа и текста
+                mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage('assets/images/avatar.jpg'), // Замените на ваш аватар
+                ),
+                  const SizedBox(width: 20), // Отступ между логотипом и текстом
+                  Text(
+                    'i-am-helen', // Текст рядом с названием
+                    style: const TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10), // Отступ после названия
               Text(
-                isLogin ? 'Вход' : 'Регистрация',
+                isLogin ? 'Вход' : 'Регистрация', // Заголовок
                 style: const TextStyle(
-                  fontSize: 32,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
