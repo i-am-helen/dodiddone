@@ -1,5 +1,4 @@
 import 'package:dodiddone/pages/login_page.dart';
-import 'package:dodiddone/pages/my_home_page.dart';
 import 'package:dodiddone/theme/theme.dart';
 import 'package:flutter/material.dart';
 
